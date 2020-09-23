@@ -1,6 +1,9 @@
 import java.util.TreeSet;
 
 public class RandomTwoNumberSum {
+    public static void main(String[] args) {
+        //실행 메서드
+    }
     public TreeSet<Integer> solution(int[] numbers) {
         int sum = 0;
         //트리셋 오름차순 저장
