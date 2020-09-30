@@ -1,3 +1,5 @@
+package level1;
+
 import java.util.*;
 class DivideNumArray {
     public int[] solution(int[] arr, int divisor) {
