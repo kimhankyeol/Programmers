@@ -17,7 +17,6 @@ public class Num124 {
 
             answer = numbers[remain] + answer;
         }
-
         return answer;
     }
 }

@@ -21,7 +21,6 @@ public class TruckBridgeStack {
         Queue<Truck> waiting = new LinkedList<>();
         //다리로 이동중인 트럭을 큐로
         Queue<Truck> bridge = new LinkedList<>();
-
         //정수형 배열을 큐로
         for(int i = 0 ; i < truck_weights.length ; ++i){
             waiting.offer(new Truck(truck_weights[i], 0));
