@@ -1,3 +1,5 @@
+package level1;
+
 import java.util.Stack;
 //카카오 크레인
 public class kakaoCrainDoll {
