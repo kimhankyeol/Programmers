@@ -22,11 +22,14 @@ N is an integer within the range [1..2,147,483,647].
 */
 //codility 1단계
 public class BinaryGap {
-    static int N = 1041;
+    static int N = 51712;
     static  int count = 0;
     static int max = 0;
+    static int oneCount = 0;
+
 
     public static void main(String[] args) {
+
         Queue<Integer>  q = new LinkedList<>();
         while (N >=1) {
             int rem = N%2;
@@ -34,12 +37,14 @@ public class BinaryGap {
             q.add(rem);
         }
         w(q);
+        System.out.println(oneCount > 1 ? max : 0);
     }
     static int w(Queue q){
-        while(!q.isEmpty()){
+       while(!q.isEmpty()){
             int prev = 0;
             prev = (int) q.poll();
             if( prev == 1){
+                oneCount++;
                 count = 0;
             }
             if( prev == 0){
